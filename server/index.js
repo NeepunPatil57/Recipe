@@ -18,8 +18,9 @@ mongoose.connect('mongodb+srv://Neepun:csd@cluster0.nqhktxo.mongodb.net/',{
     console.error("Database connection error:", err);
   });
 
+
 const corsOptions = {
-  origin: ["*"],
+  origin: ["https://recipe-gqrv.vercel.app","https://recipe-eight-theta.vercel.app"],
   credentials: true,
   exposedHeaders: ["Authorization"],
 };
@@ -31,7 +32,11 @@ app.use("/uploads",(req,res,next)=>{
   next();
 });
 
-app.use(cors(corsOptions)); 
+app.use(cors({
+  origin: ["https://recipe-gqrv.vercel.app","https://recipe-eight-theta.vercel.app"],
+  credentials: true,
+  exposedHeaders: ["Authorization"],
+})); 
 app.use("/uploads",express.static('uploads'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
