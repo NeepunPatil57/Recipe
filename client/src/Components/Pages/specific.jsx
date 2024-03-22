@@ -30,7 +30,7 @@ const Specific = () => {
   const save_recipe = async () => {
     try {
       const res = await axios.get(
-        `http://recipe-eight-theta.vercel.app/api/save-recipe/${id}`,
+        `https://recipe-eight-theta.vercel.app/api/save-recipe/${id}`,
         {
           withCredentials: true,
           headers: {

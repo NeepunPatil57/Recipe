@@ -29,7 +29,7 @@ const Navbar = () => {
 
     const handleLogout = async () => {
         try {
-            const res = await axios.get("http://recipe-eight-theta.vercel.app/api/logout", {
+            const res = await axios.get("https://recipe-eight-theta.vercel.app/api/logout", {
                 withCredentials: true,
                 headers: {
                     "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const Navbar = () => {
 
     const getMe = async () => {
         try {
-            const res = await axios.get("http://recipe-eight-theta.vercel.app/api/me", {
+            const res = await axios.get("https://recipe-eight-theta.vercel.app/api/me", {
                 withCredentials: true,
                 headers: {
                     "Content-Type": "application/json",

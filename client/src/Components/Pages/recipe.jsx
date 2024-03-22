@@ -24,7 +24,7 @@ export default function RecipePage() {
 
   const getMe = async () => {
     try {
-      const res = await axios.get("http://recipe-eight-theta.vercel.app/api/me", {
+      const res = await axios.get("https://recipe-eight-theta.vercel.app/api/me", {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",

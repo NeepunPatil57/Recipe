@@ -20,7 +20,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://recipe-eight-theta.vercel.app/api/register", formData,
+      await axios.post("https://recipe-eight-theta.vercel.app/api/register", formData,
         { withCredentials: true }
       );
       alert("Registration successful");
