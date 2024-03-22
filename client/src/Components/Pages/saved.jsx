@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
 
 
 const Saved = () => {

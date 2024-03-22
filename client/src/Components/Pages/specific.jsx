@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "./navbar";
 import axios from "axios";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
