@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://Neepun:csd@cluster0.nqhktxo.mongodb.net/',{
   });
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://recipe-gqrv-9eex02de9-neepunpatil57s-projects.vercel.app/"],
+  origin: ["http://localhost:3000", "https://recipe-gqrv.vercel.app"],
   credentials: true,
   exposedHeaders: ["Authorization"],
 };
